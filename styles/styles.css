@@ -331,19 +331,31 @@ img {
 }
 
 .subscribe-form {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.subscribe-input {
+.form-input {
+  height: 48px;
+  padding: 13px 56px 10px 17px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  font-family: "PT sans", sans-serif;
   color: #000000;
-  background: #f2f2f2;
-  border: none;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.subscribe-input {
+  width: 450px;
+  height: 52px;
+  padding: 13px 17px 10px;
+  font-weight: 400;
   border-radius: 4px 0 0 4px;
-  width: 452px;
-  padding: 14px 345px 14px 20px;
 }
 
 .subscribe-button {
@@ -436,15 +448,27 @@ img {
 }
 
 .sorting-title {
+  margin: 0;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
 }
 
 .sorting-select {
+  font-family: "PT sans", sans-serif;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
+  width: 292px;
+  height: 49px;
+  padding: 0 40px 0 18px;
+  background-color: transparent;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  appearance: none;
 }
 
 .sorting-view {
