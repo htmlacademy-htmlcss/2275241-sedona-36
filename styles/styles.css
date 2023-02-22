@@ -329,9 +329,10 @@ img {
 }
 
 .subscribe-form {
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 452px 232px;
   justify-content: center;
+  width: 100%;
 }
 
 .form-input {
@@ -427,6 +428,39 @@ img {
   line-height: 21px;
 }
 
+
+.filter-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 288px 191px;
+  gap: 20px 70px;
+  align-items: start;
+  padding-top: 40px;
+}
+
+.filter-group {
+  display: grid;
+}
+
+.filter-group-check {
+  grid-column: 1/2;
+  align-self: stretch;
+}
+
+.filter-group-radio {
+  grid-column: 2/3;
+  align-self: stretch;
+}
+
+.filter-group-range {
+  grid-column: 3/4;
+  align-self: stretch;
+}
+
+.filter-button {
+  grid-column: 4/5;
+  align-self: end;
+}
+
 .filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -491,6 +525,7 @@ img {
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
   margin-bottom: 80px;
+  padding: 0 70px;
 }
 
 .hotels-item {
@@ -526,22 +561,15 @@ img {
 }
 
 .hotels-text {
-  grid-column: 1/3;
   color: #333333;
 }
 
 .hotels-text-price {
-  grid-column: 3/5;
-  justify-self: end;
+  text-align: right;
   color: #333333;
 }
 
-.hotels-rating-star {
-  grid-column: 1/3;
-}
-
 .hotels-rating-text {
-  grid-column: 3/5;
   color: #333333;
   background-color: #f2f2f2;
   border-radius: 4px;
