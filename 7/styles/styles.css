@@ -25,7 +25,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   background-color: #f2f2f2;
 }
 
@@ -39,9 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   position: relative;
-
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -61,17 +58,13 @@ img {
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
@@ -79,7 +72,6 @@ img {
 .list-reset {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -301,7 +293,6 @@ img {
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
-
   text-align: center;
 }
 
@@ -330,9 +321,9 @@ img {
 
 .subscribe-form {
   display: grid;
-  grid-template-columns: 452px 232px;
-  justify-content: center;
-  width: 100%;
+  grid-template-columns: 1fr 232px;
+  max-width: 684px;
+  margin: 0 auto;
 }
 
 .form-input {
@@ -431,34 +422,26 @@ img {
 
 .filter-form {
   display: grid;
-  grid-template-columns: 1fr 1fr 288px 191px;
+  grid-template-columns: auto auto 1fr 191px;
   gap: 20px 70px;
   align-items: start;
   padding-top: 40px;
 }
 
 .filter-group {
-  display: grid;
-}
-
-.filter-group-check {
-  grid-column: 1/2;
-  align-self: stretch;
-}
-
-.filter-group-radio {
-  grid-column: 2/3;
-  align-self: stretch;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .filter-group-range {
-  grid-column: 3/4;
-  align-self: stretch;
+  margin-left: auto;
 }
 
 .filter-button {
-  grid-column: 4/5;
-  align-self: end;
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
 }
 
 .filter-title {
@@ -520,12 +503,16 @@ img {
   border: 2px solid #000000;
 }
 
+.hotels {
+  padding: 0 70px 24px;
+}
+
 .hotels-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
-  gap: 20px;
-  margin-bottom: 80px;
-  padding: 0 70px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px 18px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .hotels-item {
@@ -588,6 +575,7 @@ img {
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  padding: 37px 0;
 }
 
 .pagination-link {
