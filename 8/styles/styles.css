@@ -271,7 +271,7 @@ img {
   padding-bottom: 31px;
 }
 
-.advantages-title::after{
+.advantages-title::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -305,20 +305,20 @@ img {
 }
 
 .advantages-list-recommendations .advantages-content {
-padding-top: 183px;
-background-repeat: no-repeat;
-background-position: center 78px;
+  padding-top: 183px;
+  background-repeat: no-repeat;
+  background-position: center 78px;
 }
 
 .advantages-content-home {
   background-image: url("../images/advantage-house.svg");
 }
 
-.advantages-content-food{
+.advantages-content-food {
   background-image: url("../images/advantage-house.svg");
 }
 
-.advantages-content-souvenirs{
+.advantages-content-souvenirs {
   background-image: url("../images/advantage-souvenirs.svg");
 }
 
@@ -426,13 +426,13 @@ background-position: center 78px;
 .filter-page-title {
   font-size: 60px;
   line-height: 78px;
-  margin: 0  0 8px;
+  margin: 0 0 8px;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-align-items: center;
+  align-items: center;
 }
 
 .breadcrumbs-item {
@@ -440,7 +440,7 @@ align-items: center;
   margin-right: 28px;
 }
 
-.breadcrumbs-item::after{
+.breadcrumbs-item::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -511,6 +511,12 @@ align-items: center;
   grid-template-columns: 1fr;
   gap: 16px;
   justify-content: start;
+}
+
+.filter-list-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 17px;
 }
 
 .filter-control-input {
@@ -750,6 +756,7 @@ align-items: center;
 .hotels-title {
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
 .hotels-text {
@@ -818,7 +825,7 @@ align-items: center;
   border-radius: 4px;
   color: #ffffff;
   text-decoration: none;
-  align-items: center;
+  text-align: center;
 }
 
 .pagination-link-current {
