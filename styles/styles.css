@@ -87,7 +87,6 @@ img {
   position: relative;
   z-index: 1;
   display: block;
-  align-self: start;
   width: 140px;
   height: 70px;
   margin-bottom: -6px;
@@ -251,7 +250,6 @@ img {
 
 .button-transparent {
   background-color: transparent;
-  margin-top: 32px;
 }
 
 .button-transparent:hover {
@@ -543,7 +541,7 @@ img {
 
 /**Каталог**/
 .filter {
-  padding: 35px 70px 68px;
+  padding: 35px 70px 70px;
   background-image: url("../images/catalog-background.jpg");
   background-size: cover;
   color: #ffffff;
@@ -638,9 +636,14 @@ img {
   padding-top: 56px;
 }
 
+.filter-submit {
+  margin-bottom: 33px;
+  padding-bottom: 7px;
+}
+
 .filter-title {
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -834,7 +837,7 @@ img {
   grid-template-columns: 1fr auto auto;
   gap: 20px 62px;
   align-items: center;
-  padding: 51px 70px 20px;
+  padding: 49px 70px 20px;
 }
 
 .sorting-title {
